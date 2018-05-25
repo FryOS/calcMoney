@@ -6,6 +6,58 @@ $active: #efae02
 
 body
     height: 100vh
-    background: url('../img/main-img.png') center no-repeat
+    background: url('../img/bg.png') center no-repeat
     background-size: cover
+    font-family: 'Open Sans', sans-serif
+
+.calc
+    width: 1072px
+    height: 650px
+    border: 2px solid $active
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items:  center
+    justify-content: flex-start
+
+.tabs
+    width: 100%
+    padding-top: 26px
+    padding-bottom: 35px
+    display: flex
+    justify-content: center
+    .tab-left, .tab-right
+        width: 200px
+        height: 70px
+        border-radius: 0 15px 0 0
+        background-image: linear-gradient(to top, rgba(0,0,0, 0.77))
+        margin-right: 5px
+        color: #cecece
+        font-size: 18px
+        font-weight: 700
+        text-align: center
+        line-height: 70px
+        cursor: pointer
+    .tab-left
+        border-radius: 15px 0 0 0
+    .active
+        background: $active
+        color: #000
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            width: 200px
+            height: 1px
+            background-color: $active
+            left: 0
+            bottom: -6px
+
+
+
+
+
+
+
+
 

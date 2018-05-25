@@ -1,12 +1,75 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
 }
 
 body {
   height: 100vh;
-  background: url("../img/main-img.png") center no-repeat;
+  background: url("../img/bg.png") center no-repeat;
   background-size: cover;
+  font-family: "Open Sans", sans-serif;
 }
 
-/*# sourceMappingURL=style.css.map */
+.calc {
+  width: 1072px;
+  height: 650px;
+  border: 2px solid #efae02;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tabs {
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tabs .tab-left, .tabs .tab-right {
+  width: 200px;
+  height: 70px;
+  border-radius: 0 15px 0 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.77)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.77));
+  margin-right: 5px;
+  color: #cecece;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+}
+.tabs .tab-left {
+  border-radius: 15px 0 0 0;
+}
+.tabs .active {
+  background: #efae02;
+  color: #000;
+  position: relative;
+}
+.tabs .active:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #efae02;
+  left: 0;
+  bottom: -6px;
+}
