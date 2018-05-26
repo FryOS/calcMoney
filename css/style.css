@@ -73,3 +73,92 @@ body {
   left: 0;
   bottom: -6px;
 }
+
+.counter {
+  width: 132px;
+  height: 60px;
+  border: 3px solid rgba(239, 147, 2, 0.6);
+  background-color: transparent;
+  text-align: center;
+  color: #efae02;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.bloks {
+  width: 65%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bloks-title {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.bloks-title:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #efae02;
+  bottom: 0;
+  left: 0;
+}
+
+#pages-block {
+  display: none;
+}
+
+.addiction {
+  font-size: 30px;
+  font-weight: 700;
+  color: #efae02;
+}
+.addiction-title {
+  text-align: center;
+}
+.addiction-block {
+  text-align: left;
+}
+.addiction-block input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+
+.total {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+.total-count {
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: #efae02;
+  text-align: right;
+  font-size: 56px;
+  font-weight: 700;
+}
